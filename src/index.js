@@ -1,8 +1,8 @@
 import './style.css';
 
-if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator) {//Если браузер поддерживает Service Workers 
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js');
+    navigator.serviceWorker.register('./sw.js'); //Регистрируем sw.js, чтобы управлять кэшированием и оффлайн-режимом
   });
 }
 
@@ -11,7 +11,7 @@ const refreshButton = document.getElementById('refresh');
 
 async function loadData() {
   try {
-    const response = await fetch('https://ahj-hw12-task1-workers-backend.onrender.com/api/data');
+    const response = await fetch('https://ahj-hw12-task1-workers-backend.onrender.com/api/data'); //бэкенд лежит на render.com
     const data = await response.json();
     content.innerHTML = data.map(item => `<p>${item.text}</p>`).join('');
   } catch (error) {
