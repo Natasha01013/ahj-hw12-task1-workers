@@ -15,7 +15,7 @@ async function loadData() {
     const data = await response.json();
     content.innerHTML = data.map(item => `<p>${item.text}</p>`).join('');
   } catch (error) {
-    content.innerHTML = '<p>Failed to load data. Check your connection and refresh.</p>';
+    content.innerHTML = '<p>Не удалось загрузить данные. Проверьте подключение и обновите данные.</p>';
   }
 }
 
