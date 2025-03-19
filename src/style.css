@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.placeholder {
+  background-color: #ddd;
+  height: 50px;
+  margin: 10px;
+}
