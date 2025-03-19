@@ -16,3 +16,11 @@ build_script: #секция, в которой указаны команды д�
 
 test_script: #секция, в которой указаны команды для тестирования проекта
   - npm run lint # скрипт тестирования
+
+deploy_script:
+  - git config --global user.email "your-email@example.com"
+  - git config --global user.name "Your Name"
+  - git checkout -b gh-pages
+  - git --work-tree public add --all
+  - git --git-dir public/.git commit -m "Deploy to GitHub Pages"
+  - git subtree push --prefix public origin gh-pages
