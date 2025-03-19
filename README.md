@@ -1,7 +1,7 @@
 # CI test
+[![Build status](https://ci.appveyor.com/api/projects/status/mh72s4almdlw24k5?svg=true)](https://ci.appveyor.com/project/Natasha01013/ahj-hw12-task1-workers)  
 
-
-[Github Pages]()  
+[Github Pages](https://natasha01013.github.io/ahj-hw12-task1-workers/)   
 
 # Домашнее задание к занятию "12. WebWorkers, ServiceWorkers"  
 ## Задача 1. Loading Styling  
